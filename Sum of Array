@@ -1,0 +1,98 @@
+#Write a program to print the sum of array.
+#input: arr = [1,2,3,4]
+#output: 10
+
+#C
+
+#include <stdio.h>
+ 
+int main(void) {
+	
+	int numArray[4];   // Define an array of four integers
+        int i,j;
+	// Get inputs for the array elements
+	for (i=0; i<4; i++) {
+    	scanf("%d", &numArray[i]);
+	}
+    
+	int sum = 0;
+	for (j=0;j<4;j++){
+	    sum = sum+numArray[j];
+	}
+	// Write the logic to add these integers here:
+ 
+ 
+ 
+    
+	
+	printf("%d\n",sum);   // Print the sum
+    
+	return 0;
+}
+
+#C++
+
+#include <iostream>
+using namespace std;
+ 
+int main(void) {
+	
+	int numArray[4];   // Define an array of four integers
+        int i;
+	// Get inputs for the array elements
+	for (i=0; i<4; i++) {
+    	cin >> numArray[i];
+	}
+    
+	int sum = 0;
+	for (i=0;i<4;i++){
+	    sum = sum+numArray[i];
+	}
+
+	
+	cout << sum << endl;// Print the sum
+    
+	return 0;
+}
+
+#JAVA
+
+import java.util.Scanner;
+
+public class SumOfFour {
+	public static void main(String[] args) {
+		
+		int[] numArray = new int[4]; // Define an array of integers of size 4.
+		Scanner s = new Scanner(System.in);
+                int i;
+		for(i=0; i<4; i++){
+			numArray[i] = s.nextInt(); // Get the input
+		}
+		
+		int sum = 0;
+		
+		for (i=0;i<4;i++){
+		    sum = sum+numArray[i];
+		}
+		// Write the logic to add these integers here:
+	
+		
+		
+		
+		System.out.print(sum); // Print the sum
+		s.close();
+	}
+}
+
+#Python3
+
+numArray = map(int, input().split()) # Get the input
+
+
+sum_integer = sum(numArray)
+# write your logic to add these 4 numbers here
+
+
+
+
+print(sum_integer) # Print the sum
