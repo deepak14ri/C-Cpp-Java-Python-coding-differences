@@ -1,0 +1,77 @@
+#Write a program to print the sum of two integers.
+#input = 4 6
+#output = 10
+
+#C
+
+#include <stdio.h>
+ 
+int main(){
+	
+	int num1, num2;   // Define two integer variables
+    
+	
+	scanf("%d %d", &num1, &num2);  // Get input for the two variables
+    
+	int sum = num1+num2;
+	// Write the logic to add these numbers here:
+    
+    
+ 
+    
+	
+	printf("%d\n", sum);   // Print the sum
+	return 0;
+}
+
+#C++
+
+#include <iostream>
+using namespace std;
+
+int main(){
+    
+	int num1, num2;   // Define two integer variables
+	cin >> num1 >> num2;  // Get input for the two variables
+    
+	int sum = num1+num2;
+	
+	cout << sum << endl;   // Print the sum
+	return 0;
+}
+
+#JAVA
+
+import java.util.Scanner;
+
+public class SumOfTwo {
+	public static void main(String[] args) {
+	    
+		Scanner s = new Scanner(System.in); 
+		
+		int num1 = s.nextInt(); // Get first integer
+		int num2 = s.nextInt(); // Get second integer
+		
+		int sum = num1+num2;
+		// Write the logic to add these integers here
+		
+		
+		
+		
+		
+		// Print the sum
+		System.out.println(sum);
+		s.close();
+	}
+
+}
+
+#Python3
+
+# Get the input for the two variables
+num1, num2 = map(int, input().split())
+
+sum_integer = num1+num2
+
+# 
+print(sum_integer)
