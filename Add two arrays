@@ -1,0 +1,117 @@
+Sample Input:
+N = 3 
+3 9 8
+8 12 74
+
+Sample Output:
+11 21 82
+
+#C
+
+#include <stdio.h>
+
+int main(void) {
+    int N, i;
+    scanf("%d", &N);
+    // Declare the two arrays
+    int numArrayA[N], numArrayB[N], sumArray[N];
+    
+    for(i=0;i<N;i++) sumArray[i]=0;
+    
+    // Get the numArrayA
+    for (i=0; i<N; i++) {
+        scanf("%d", &numArrayA[i]);
+    }
+    
+    // Get the numArrayB
+    for (i=0; i<N; i++) {
+        scanf("%d", &numArrayB[i]);
+    }
+    
+    for(i=0;i<N;i++){
+        sumArray[i] = numArrayA[i]+numArrayB[i]; 
+        
+        printf("%d ", sumArray[i]);
+    }
+    printf("\n");
+    return 0;
+}
+
+#C++
+
+#include <iostream>
+using namespace std;
+
+int main(void) {
+    int N, i;
+    cin >> N;
+    // Declare the two arrays
+    int numArrayA[N], numArrayB[N];
+    int sumArrayC[N];
+    
+    // Get the numArrayA
+    for (i=0; i<N; i++) {
+        cin >> numArrayA[i];
+    }
+    
+    // Get the numArrayB
+    for (i=0; i<N; i++) {
+       cin >> numArrayB[i];
+    }
+    
+    for (i=0; i<N; i++) {
+        sumArrayC[i] = numArrayA[i]+numArrayB[i];
+        cout << sumArrayC[i] << " ";
+    }
+    cout << endl;
+    return 0;
+}
+
+#JAVA
+
+import java.util.Scanner;
+
+public class AddTwoArrays {
+
+	public static void main(String[] args) {
+		
+		Scanner s = new Scanner(System.in);
+		
+		// Reading integer from input
+		int N = s.nextInt();
+		
+		int[] numArrayA = new int[N];
+		int[] numArrayB = new int[N];
+		int[] sumArray = new int[N];
+				
+		// Read numArray1
+		for(int i=0; i<N; i++) {
+			numArrayA[i] = s.nextInt();
+		}
+		// Read numArray2
+		for(int i=0; i<N; i++) {
+			numArrayB[i] = s.nextInt();
+		}
+		
+		for(int i=0;i<N;i++){
+		    sumArray[i] = numArrayA[i]+numArrayB[i];
+	
+            System.out.print(sumArray[i]+" ");
+		}
+		s.close();
+
+	}
+
+}
+
+#Python3
+
+N = int(input())
+
+# Get the array 
+numArray1 = list(map(int, input().split()))
+numArray2 = list(map(int, input().split()))
+
+
+for i in range(N):
+    print(numArray1[i]+numArray2[i],end=' ')
