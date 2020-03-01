@@ -1,0 +1,2 @@
+# C-Cpp-Java-Python-coding-differences
+These three programming languages are the most popular among the coders in terms of competitive coding and programming.  C is structure/procedure oriented programming language as well as fast. C++ as of today in its efficiency, speed, and memory make it widely popular among coders. Java is platform-independent. It continues to add considerable value to the world of software development. Python requires less typing, provides new libraries, fast prototyping, and several other new features.
