@@ -1,0 +1,64 @@
+# input: Deepak
+# output: Hello Deepak
+
+#C
+#Write a program to print your name as output.
+
+#include<stdio.h>
+ 
+int main() {
+    // declare a variable to store the name
+    char *name = (char *) malloc(100);
+    
+    // read the name from input
+    scanf("%s", name);
+    
+    // print the name 
+    printf("Hello %s", name);
+}
+
+#C++
+
+#include <iostream>
+using namespace std;
+
+int main(){
+    string name;
+    
+    // read the user's name from standard input
+    cin >> name;
+    
+   // output the name along with 'Hello' String
+    cout << "Hello " << name << endl;
+    
+    return 0;
+}
+
+#JAVA
+
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
+
+
+class TestClass {
+    public static void main(String args[] ) throws Exception {
+        
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        
+        // read the name from the input 
+        String line = br.readLine();
+        
+        // print the name
+        System.out.println("Hello "+ line);
+        
+    }
+}
+
+#Python3
+
+# read the name from standard input
+name = input()
+
+# print the name along with Hello
+print('Hello {0}'.format(name))
+
