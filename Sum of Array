@@ -16,15 +16,12 @@ int main(void) {
 	}
     
 	int sum = 0;
+	
+	// Write the logic to add these integers here:
 	for (j=0;j<4;j++){
+	
 	    sum = sum+numArray[j];
 	}
-	// Write the logic to add these integers here:
- 
- 
- 
-    
-	
 	printf("%d\n",sum);   // Print the sum
     
 	return 0;
@@ -70,14 +67,10 @@ public class SumOfFour {
 		}
 		
 		int sum = 0;
-		
+		// Write the logic to add these integers here:
 		for (i=0;i<4;i++){
 		    sum = sum+numArray[i];
 		}
-		// Write the logic to add these integers here:
-	
-		
-		
 		
 		System.out.print(sum); // Print the sum
 		s.close();
@@ -86,13 +79,11 @@ public class SumOfFour {
 
 #Python3
 
-numArray = map(int, input().split()) # Get the input
-
-
-sum_integer = sum(numArray)
+numArray = list(map(int, input().split())) # Get the input
+for i in range(len(numArray)):
+      summ = summ+numArray[i]
+#or
+#sum_integer = sum(numArray)
 # write your logic to add these 4 numbers here
-
-
-
 
 print(sum_integer) # Print the sum
